@@ -58,22 +58,22 @@ function ToggleDisplay(CheckButton, ClassName) {
 <h1>haproxy - scan-build results</h1>
 
 <table>
-<tr><th>User:</th><td>ilia@localhost.localdomain</td></tr>
+<tr><th>User:</th><td>ilia@MININT-GOKPRIV.redmond.corp.microsoft.com</td></tr>
 <tr><th>Working Directory:</th><td>/home/ilia/haproxy</td></tr>
 <tr><th>Command Line:</th><td>make -j3 CC=gcc ERR=1 TARGET=linux-glibc USE_OPENSSL=1</td></tr>
 <tr><th>Clang Version:</th><td>clang version 9.0.1 (Fedora 9.0.1-2.fc31)
 </td></tr>
-<tr><th>Date:</th><td>Thu Apr 16 19:18:57 2020</td></tr>
+<tr><th>Date:</th><td>Wed Apr 29 15:47:08 2020</td></tr>
 </table>
 <h2>Bug Summary</h2><table>
 <thead><tr><td>Bug Type</td><td>Quantity</td><td class="sorttable_nosort">Display?</td></tr></thead>
-<tr style="font-weight:bold"><td class="SUMM_DESC">All Bugs</td><td class="Q">169</td><td><center><input type="checkbox" id="AllBugsCheck" onClick="CopyCheckedStateToCheckButtons(this);" checked/></center></td></tr>
+<tr style="font-weight:bold"><td class="SUMM_DESC">All Bugs</td><td class="Q">179</td><td><center><input type="checkbox" id="AllBugsCheck" onClick="CopyCheckedStateToCheckButtons(this);" checked/></center></td></tr>
 <tr><th>API</th><th colspan=2></th></tr>
-<tr><td class="SUMM_DESC">Argument with 'nonnull' attribute passed null</td><td class="Q">2</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_api_argument_with_nonnull_attribute_passed_null');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Argument with 'nonnull' attribute passed null</td><td class="Q">4</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_api_argument_with_nonnull_attribute_passed_null');" checked/></center></td></tr>
 <tr><th>Dead store</th><th colspan=2></th></tr>
-<tr><td class="SUMM_DESC">Dead assignment</td><td class="Q">54</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_dead_store_dead_assignment');" checked/></center></td></tr>
-<tr><td class="SUMM_DESC">Dead increment</td><td class="Q">20</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_dead_store_dead_increment');" checked/></center></td></tr>
-<tr><td class="SUMM_DESC">Dead initialization</td><td class="Q">5</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_dead_store_dead_initialization');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Dead assignment</td><td class="Q">58</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_dead_store_dead_assignment');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Dead increment</td><td class="Q">21</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_dead_store_dead_increment');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Dead initialization</td><td class="Q">8</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_dead_store_dead_initialization');" checked/></center></td></tr>
 <tr><th>Logic error</th><th colspan=2></th></tr>
 <tr><td class="SUMM_DESC">Assigned value is garbage or undefined</td><td class="Q">2</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_assigned_value_is_garbage_or_undefined');" checked/></center></td></tr>
 <tr><td class="SUMM_DESC">Dangerous variable-length array (VLA) declaration</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_dangerous_variable-length_array_vla_declaration');" checked/></center></td></tr>
@@ -102,512 +102,542 @@ function ToggleDisplay(CheckButton, ClassName) {
   <!-- REPORTBUGCOL -->
 </tr></thead>
 <tbody>
-<tr class="bt_unix_api_allocator_sizeof_operand_mismatch"><td class="DESC">Unix API</td><td class="DESC">Allocator sizeof operand mismatch</td><td>src/cfgparse.c</td><td class="DESC">check_config_validity</td><td class="Q">3712</td><td class="Q">1</td><td><a href="report-31a0b9.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-31a0b9.html" -->
+<tr class="bt_unix_api_allocator_sizeof_operand_mismatch"><td class="DESC">Unix API</td><td class="DESC">Allocator sizeof operand mismatch</td><td>src/cfgparse.c</td><td class="DESC">check_config_validity</td><td class="Q">3677</td><td class="Q">1</td><td><a href="report-5b8b77.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5b8b77.html" -->
 </tr>
-<tr class="bt_api_argument_with_nonnull_attribute_passed_null"><td class="DESC">API</td><td class="DESC">Argument with 'nonnull' attribute passed null</td><td>src/cache.c</td><td class="DESC">parse_cache_flt</td><td class="Q">1435</td><td class="Q">7</td><td><a href="report-771a1a.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-771a1a.html" -->
+<tr class="bt_api_argument_with_nonnull_attribute_passed_null"><td class="DESC">API</td><td class="DESC">Argument with 'nonnull' attribute passed null</td><td>src/cache.c</td><td class="DESC">parse_cache_flt</td><td class="Q">1435</td><td class="Q">7</td><td><a href="report-53b318.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-53b318.html" -->
 </tr>
-<tr class="bt_api_argument_with_nonnull_attribute_passed_null"><td class="DESC">API</td><td class="DESC">Argument with 'nonnull' attribute passed null</td><td>src/cfgparse.c</td><td class="DESC">readcfgfile</td><td class="Q">2109</td><td class="Q">46</td><td><a href="report-812921.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-812921.html" -->
+<tr class="bt_api_argument_with_nonnull_attribute_passed_null"><td class="DESC">API</td><td class="DESC">Argument with 'nonnull' attribute passed null</td><td>src/checks.c</td><td class="DESC">parse_tcpcheck_expect</td><td class="Q">4279</td><td class="Q">41</td><td><a href="report-8c9aec.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-8c9aec.html" -->
 </tr>
-<tr class="bt_logic_error_assigned_value_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Assigned value is garbage or undefined</td><td>src/haproxy.c</td><td class="DESC">get_old_sockets</td><td class="Q">1250</td><td class="Q">83</td><td><a href="report-e38035.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-e38035.html" -->
+<tr class="bt_api_argument_with_nonnull_attribute_passed_null"><td class="DESC">API</td><td class="DESC">Argument with 'nonnull' attribute passed null</td><td>src/checks.c</td><td class="DESC">parse_tcpcheck_expect</td><td class="Q">4247</td><td class="Q">42</td><td><a href="report-4bf977.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4bf977.html" -->
 </tr>
-<tr class="bt_logic_error_assigned_value_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Assigned value is garbage or undefined</td><td>include/common/ist.h</td><td class="DESC">istfind</td><td class="Q">671</td><td class="Q">73</td><td><a href="report-fbfcad.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-fbfcad.html" -->
+<tr class="bt_api_argument_with_nonnull_attribute_passed_null"><td class="DESC">API</td><td class="DESC">Argument with 'nonnull' attribute passed null</td><td>src/cfgparse.c</td><td class="DESC">readcfgfile</td><td class="Q">2079</td><td class="Q">46</td><td><a href="report-d0d24c.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d0d24c.html" -->
 </tr>
-<tr class="bt_logic_error_dangerous_variable-length_array_vla_declaration"><td class="DESC">Logic error</td><td class="DESC">Dangerous variable-length array (VLA) declaration</td><td>src/flt_trace.c</td><td class="DESC">trace_raw_hexdump</td><td class="Q">115</td><td class="Q">15</td><td><a href="report-82c6be.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-82c6be.html" -->
+<tr class="bt_logic_error_assigned_value_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Assigned value is garbage or undefined</td><td>src/haproxy.c</td><td class="DESC">get_old_sockets</td><td class="Q">1257</td><td class="Q">83</td><td><a href="report-f1367c.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f1367c.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/hpack-huff.c</td><td class="DESC">huff_dec</td><td class="Q">1446</td><td class="Q">1</td><td><a href="report-cabbfb.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-cabbfb.html" -->
+<tr class="bt_logic_error_assigned_value_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Assigned value is garbage or undefined</td><td>include/common/ist.h</td><td class="DESC">istfind</td><td class="Q">677</td><td class="Q">73</td><td><a href="report-84a80a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-84a80a.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/arg.c</td><td class="DESC">make_arg_list</td><td class="Q">301</td><td class="Q">1</td><td><a href="report-f5b2c5.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-f5b2c5.html" -->
+<tr class="bt_logic_error_dangerous_variable-length_array_vla_declaration"><td class="DESC">Logic error</td><td class="DESC">Dangerous variable-length array (VLA) declaration</td><td>src/flt_trace.c</td><td class="DESC">trace_raw_hexdump</td><td class="Q">115</td><td class="Q">15</td><td><a href="report-6d66c2.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6d66c2.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/xprt_handshake.c</td><td class="DESC">xprt_handshake_io_cb</td><td class="Q">120</td><td class="Q">1</td><td><a href="report-05ed74.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-05ed74.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/hpack-huff.c</td><td class="DESC">huff_dec</td><td class="Q">1446</td><td class="Q">1</td><td><a href="report-931c1b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-931c1b.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/http_act.c</td><td class="DESC">parse_http_deny</td><td class="Q">888</td><td class="Q">1</td><td><a href="report-65c7ce.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-65c7ce.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/arg.c</td><td class="DESC">make_arg_list</td><td class="Q">301</td><td class="Q">1</td><td><a href="report-2b1e27.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2b1e27.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>include/common/h1.h</td><td class="DESC">h1_parse_chunk_size</td><td class="Q">299</td><td class="Q">1</td><td><a href="report-a54137.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-a54137.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/xprt_handshake.c</td><td class="DESC">xprt_handshake_io_cb</td><td class="Q">120</td><td class="Q">1</td><td><a href="report-6bb15a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6bb15a.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/debug.c</td><td class="DESC">debug_parse_cli_stream</td><td class="Q">561</td><td class="Q">1</td><td><a href="report-428349.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-428349.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/http_act.c</td><td class="DESC">parse_http_deny</td><td class="Q">888</td><td class="Q">1</td><td><a href="report-2ed06a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2ed06a.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/debug.c</td><td class="DESC">debug_parse_cli_stream</td><td class="Q">546</td><td class="Q">1</td><td><a href="report-5731d3.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-5731d3.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>include/common/h1.h</td><td class="DESC">h1_parse_chunk_size</td><td class="Q">299</td><td class="Q">1</td><td><a href="report-c68ab7.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c68ab7.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/debug.c</td><td class="DESC">ha_thread_dump</td><td class="Q">146</td><td class="Q">1</td><td><a href="report-3ce5a2.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-3ce5a2.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/debug.c</td><td class="DESC">debug_parse_cli_stream</td><td class="Q">561</td><td class="Q">1</td><td><a href="report-4f43f9.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4f43f9.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/payload.c</td><td class="DESC">smp_fetch_req_ssl_ver</td><td class="Q">401</td><td class="Q">1</td><td><a href="report-1537d6.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-1537d6.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/debug.c</td><td class="DESC">debug_parse_cli_stream</td><td class="Q">546</td><td class="Q">1</td><td><a href="report-3a5b58.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-3a5b58.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/acl.c</td><td class="DESC">parse_acl_cond</td><td class="Q">958</td><td class="Q">1</td><td><a href="report-c2c946.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-c2c946.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/debug.c</td><td class="DESC">ha_thread_dump</td><td class="Q">146</td><td class="Q">1</td><td><a href="report-bc5474.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-bc5474.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>include/common/h1.h</td><td class="DESC">h1_parse_chunk_size</td><td class="Q">299</td><td class="Q">1</td><td><a href="report-0a0065.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-0a0065.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/payload.c</td><td class="DESC">smp_fetch_req_ssl_ver</td><td class="Q">401</td><td class="Q">1</td><td><a href="report-0a331c.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0a331c.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/http_fetch.c</td><td class="DESC">smp_prefetch_htx</td><td class="Q">191</td><td class="Q">1</td><td><a href="report-e99c9d.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-e99c9d.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/acl.c</td><td class="DESC">parse_acl_cond</td><td class="Q">958</td><td class="Q">1</td><td><a href="report-80939c.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-80939c.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>include/common/h1.h</td><td class="DESC">h1_parse_chunk_size</td><td class="Q">299</td><td class="Q">1</td><td><a href="report-7b9f9e.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-7b9f9e.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>include/common/h1.h</td><td class="DESC">h1_parse_chunk_size</td><td class="Q">299</td><td class="Q">1</td><td><a href="report-505205.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-505205.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/dns.c</td><td class="DESC">dns_validate_dns_response</td><td class="Q">703</td><td class="Q">1</td><td><a href="report-e40473.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-e40473.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/http_fetch.c</td><td class="DESC">smp_prefetch_htx</td><td class="Q">193</td><td class="Q">1</td><td><a href="report-80511c.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-80511c.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/h1.c</td><td class="DESC">h1_headers_to_hdr_list</td><td class="Q">903</td><td class="Q">1</td><td><a href="report-bcd6b4.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-bcd6b4.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>include/common/h1.h</td><td class="DESC">h1_parse_chunk_size</td><td class="Q">299</td><td class="Q">1</td><td><a href="report-2fe5af.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2fe5af.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/h1.c</td><td class="DESC">h1_headers_to_hdr_list</td><td class="Q">637</td><td class="Q">1</td><td><a href="report-0cb18d.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-0cb18d.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/h1.c</td><td class="DESC">h1_headers_to_hdr_list</td><td class="Q">903</td><td class="Q">1</td><td><a href="report-4d6b1d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4d6b1d.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/h1.c</td><td class="DESC">h1_headers_to_hdr_list</td><td class="Q">528</td><td class="Q">1</td><td><a href="report-c1c325.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-c1c325.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/h1.c</td><td class="DESC">h1_headers_to_hdr_list</td><td class="Q">637</td><td class="Q">1</td><td><a href="report-6d2cce.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6d2cce.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/h1.c</td><td class="DESC">h1_headers_to_hdr_list</td><td class="Q">525</td><td class="Q">1</td><td><a href="report-11240b.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-11240b.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/h1.c</td><td class="DESC">h1_headers_to_hdr_list</td><td class="Q">528</td><td class="Q">1</td><td><a href="report-31e80e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-31e80e.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/h1.c</td><td class="DESC">h1_headers_to_hdr_list</td><td class="Q">329</td><td class="Q">1</td><td><a href="report-615823.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-615823.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/h1.c</td><td class="DESC">h1_headers_to_hdr_list</td><td class="Q">525</td><td class="Q">1</td><td><a href="report-f855d0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f855d0.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/h1.c</td><td class="DESC">h1_headers_to_hdr_list</td><td class="Q">326</td><td class="Q">1</td><td><a href="report-30bf66.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-30bf66.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/h1.c</td><td class="DESC">h1_headers_to_hdr_list</td><td class="Q">329</td><td class="Q">1</td><td><a href="report-46af4a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-46af4a.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>include/common/h1.h</td><td class="DESC">h1_parse_chunk_size</td><td class="Q">299</td><td class="Q">1</td><td><a href="report-961c1a.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-961c1a.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/h1.c</td><td class="DESC">h1_headers_to_hdr_list</td><td class="Q">326</td><td class="Q">1</td><td><a href="report-177478.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-177478.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/listener.c</td><td class="DESC">pause_listener</td><td class="Q">310</td><td class="Q">1</td><td><a href="report-beca21.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-beca21.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>include/common/h1.h</td><td class="DESC">h1_parse_chunk_size</td><td class="Q">299</td><td class="Q">1</td><td><a href="report-d36ec7.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d36ec7.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/standard.c</td><td class="DESC">mask_find_rank_bit_fast</td><td class="Q">2735</td><td class="Q">1</td><td><a href="report-a4691b.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-a4691b.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/dns.c</td><td class="DESC">dns_validate_dns_response</td><td class="Q">703</td><td class="Q">1</td><td><a href="report-4388b6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4388b6.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/standard.c</td><td class="DESC">mask_find_rank_bit</td><td class="Q">2700</td><td class="Q">1</td><td><a href="report-e8bde4.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-e8bde4.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/listener.c</td><td class="DESC">pause_listener</td><td class="Q">310</td><td class="Q">1</td><td><a href="report-a71337.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a71337.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/cli.c</td><td class="DESC">pcli_parse_request</td><td class="Q">2118</td><td class="Q">1</td><td><a href="report-4a03d5.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-4a03d5.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/standard.c</td><td class="DESC">mask_find_rank_bit_fast</td><td class="Q">2768</td><td class="Q">1</td><td><a href="report-33fcd1.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-33fcd1.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/peers.c</td><td class="DESC">peer_io_handler</td><td class="Q">2430</td><td class="Q">1</td><td><a href="report-80db02.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-80db02.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/standard.c</td><td class="DESC">mask_find_rank_bit</td><td class="Q">2733</td><td class="Q">1</td><td><a href="report-4e3afb.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4e3afb.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/peers.c</td><td class="DESC">peer_io_handler</td><td class="Q">2420</td><td class="Q">1</td><td><a href="report-3c00cf.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-3c00cf.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/checks.c</td><td class="DESC">parse_tcpcheck_connect</td><td class="Q">3509</td><td class="Q">1</td><td><a href="report-49286a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-49286a.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/peers.c</td><td class="DESC">peer_io_handler</td><td class="Q">2187</td><td class="Q">1</td><td><a href="report-8fe15c.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-8fe15c.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/checks.c</td><td class="DESC">tcpcheck_eval_expect</td><td class="Q">2303</td><td class="Q">1</td><td><a href="report-785a71.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-785a71.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/peers.c</td><td class="DESC">peer_send_teachmsgs</td><td class="Q">1190</td><td class="Q">1</td><td><a href="report-20a840.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-20a840.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/checks.c</td><td class="DESC">tcpcheck_eval_expect</td><td class="Q">2262</td><td class="Q">1</td><td><a href="report-52222a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-52222a.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/haproxy.c</td><td class="DESC">get_old_sockets</td><td class="Q">1168</td><td class="Q">1</td><td><a href="report-aa6a54.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-aa6a54.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/checks.c</td><td class="DESC">tcpcheck_eval_expect_http</td><td class="Q">2132</td><td class="Q">1</td><td><a href="report-554b8f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-554b8f.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/log.c</td><td class="DESC">__do_send_log</td><td class="Q">1694</td><td class="Q">1</td><td><a href="report-60d0fa.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-60d0fa.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>include/common/h1.h</td><td class="DESC">h1_parse_chunk_size</td><td class="Q">299</td><td class="Q">1</td><td><a href="report-368f88.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-368f88.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/log.c</td><td class="DESC">parse_logformat_string</td><td class="Q">620</td><td class="Q">1</td><td><a href="report-02c8f7.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-02c8f7.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/haproxy.c</td><td class="DESC">get_old_sockets</td><td class="Q">1175</td><td class="Q">1</td><td><a href="report-2ddc4f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2ddc4f.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/log.c</td><td class="DESC">parse_logformat_string</td><td class="Q">619</td><td class="Q">1</td><td><a href="report-277363.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-277363.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/cli.c</td><td class="DESC">pcli_parse_request</td><td class="Q">2118</td><td class="Q">1</td><td><a href="report-b3475d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b3475d.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/server.c</td><td class="DESC">srv_update_status</td><td class="Q">5388</td><td class="Q">1</td><td><a href="report-91a907.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-91a907.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/peers.c</td><td class="DESC">peer_io_handler</td><td class="Q">2430</td><td class="Q">1</td><td><a href="report-17c71b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-17c71b.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/server.c</td><td class="DESC">update_server_addr_port</td><td class="Q">4015</td><td class="Q">1</td><td><a href="report-71d3d4.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-71d3d4.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/peers.c</td><td class="DESC">peer_io_handler</td><td class="Q">2420</td><td class="Q">1</td><td><a href="report-0fe2a4.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0fe2a4.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/server.c</td><td class="DESC">apply_server_state</td><td class="Q">3683</td><td class="Q">1</td><td><a href="report-37eb61.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-37eb61.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/peers.c</td><td class="DESC">peer_io_handler</td><td class="Q">2187</td><td class="Q">1</td><td><a href="report-daf88d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-daf88d.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>include/common/h1.h</td><td class="DESC">h1_parse_chunk_size</td><td class="Q">299</td><td class="Q">1</td><td><a href="report-02158c.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-02158c.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/peers.c</td><td class="DESC">peer_send_teachmsgs</td><td class="Q">1190</td><td class="Q">1</td><td><a href="report-53c2ce.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-53c2ce.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/cfgparse.c</td><td class="DESC">check_config_validity</td><td class="Q">3964</td><td class="Q">1</td><td><a href="report-f47e1b.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-f47e1b.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/log.c</td><td class="DESC">__do_send_log</td><td class="Q">1696</td><td class="Q">1</td><td><a href="report-2e3827.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2e3827.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/cfgparse.c</td><td class="DESC">readcfgfile</td><td class="Q">2066</td><td class="Q">1</td><td><a href="report-b5dd6e.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-b5dd6e.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/log.c</td><td class="DESC">parse_logformat_string</td><td class="Q">622</td><td class="Q">1</td><td><a href="report-7b256e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-7b256e.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3536</td><td class="Q">1</td><td><a href="report-309904.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-309904.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/log.c</td><td class="DESC">parse_logformat_string</td><td class="Q">621</td><td class="Q">1</td><td><a href="report-97d842.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-97d842.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3530</td><td class="Q">1</td><td><a href="report-8a9a61.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-8a9a61.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>include/common/h1.h</td><td class="DESC">h1_parse_chunk_size</td><td class="Q">299</td><td class="Q">1</td><td><a href="report-1f7e3c.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-1f7e3c.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3295</td><td class="Q">1</td><td><a href="report-cfa85d.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-cfa85d.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/server.c</td><td class="DESC">srv_update_status</td><td class="Q">4964</td><td class="Q">1</td><td><a href="report-443685.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-443685.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/mux_fcgi.c</td><td class="DESC">fcgi_snd_buf</td><td class="Q">3989</td><td class="Q">1</td><td><a href="report-0dd788.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-0dd788.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/server.c</td><td class="DESC">update_server_addr_port</td><td class="Q">3597</td><td class="Q">1</td><td><a href="report-d56aaa.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d56aaa.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>include/common/h1.h</td><td class="DESC">h1_parse_chunk_size</td><td class="Q">299</td><td class="Q">1</td><td><a href="report-3d07de.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-3d07de.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/server.c</td><td class="DESC">apply_server_state</td><td class="Q">3265</td><td class="Q">1</td><td><a href="report-62c182.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-62c182.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/stats.c</td><td class="DESC">stats_emit_json_data_field</td><td class="Q">388</td><td class="Q">1</td><td><a href="report-cf00e5.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-cf00e5.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/cfgparse.c</td><td class="DESC">check_config_validity</td><td class="Q">3929</td><td class="Q">1</td><td><a href="report-198114.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-198114.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/ssl_sock.c</td><td class="DESC">srv_parse_alpn</td><td class="Q">9795</td><td class="Q">1</td><td><a href="report-d9dc31.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-d9dc31.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/cfgparse.c</td><td class="DESC">readcfgfile</td><td class="Q">2036</td><td class="Q">1</td><td><a href="report-4ef94a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4ef94a.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/ssl_sock.c</td><td class="DESC">srv_parse_npn</td><td class="Q">9734</td><td class="Q">1</td><td><a href="report-d80594.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-d80594.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3536</td><td class="Q">1</td><td><a href="report-222001.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-222001.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/ssl_sock.c</td><td class="DESC">ssl_bind_parse_alpn</td><td class="Q">9479</td><td class="Q">1</td><td><a href="report-eddc68.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-eddc68.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3530</td><td class="Q">1</td><td><a href="report-362e36.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-362e36.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/ssl_sock.c</td><td class="DESC">ssl_bind_parse_npn</td><td class="Q">9424</td><td class="Q">1</td><td><a href="report-20ea92.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-20ea92.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3295</td><td class="Q">1</td><td><a href="report-ec2d06.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ec2d06.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/ssl_sock.c</td><td class="DESC">ssl_sock_handshake</td><td class="Q">6646</td><td class="Q">1</td><td><a href="report-7a2ef1.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-7a2ef1.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/mux_fcgi.c</td><td class="DESC">fcgi_snd_buf</td><td class="Q">3990</td><td class="Q">1</td><td><a href="report-c085ef.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c085ef.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/mux_h2.c</td><td class="DESC">h2_snd_buf</td><td class="Q">5939</td><td class="Q">1</td><td><a href="report-b40c2f.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-b40c2f.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>include/common/h1.h</td><td class="DESC">h1_parse_chunk_size</td><td class="Q">299</td><td class="Q">1</td><td><a href="report-6fd26e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6fd26e.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/mux_h2.c</td><td class="DESC">h2c_bck_handle_headers</td><td class="Q">2593</td><td class="Q">1</td><td><a href="report-3f0a45.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-3f0a45.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/stats.c</td><td class="DESC">stats_emit_json_data_field</td><td class="Q">388</td><td class="Q">1</td><td><a href="report-aa93f7.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-aa93f7.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/mux_h2.c</td><td class="DESC">h2c_frt_handle_headers</td><td class="Q">2481</td><td class="Q">1</td><td><a href="report-e8cb9e.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-e8cb9e.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/mux_h2.c</td><td class="DESC">h2_snd_buf</td><td class="Q">5939</td><td class="Q">1</td><td><a href="report-fd8d5a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-fd8d5a.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>include/common/h1.h</td><td class="DESC">h1_parse_chunk_size</td><td class="Q">299</td><td class="Q">1</td><td><a href="report-820537.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-820537.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/ssl_sock.c</td><td class="DESC">srv_parse_npn</td><td class="Q">9770</td><td class="Q">1</td><td><a href="report-84eba6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-84eba6.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/fcgi.c</td><td class="DESC">fcgi_decode_end_request</td><td class="Q">283</td><td class="Q">1</td><td><a href="report-df735e.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-df735e.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/ssl_sock.c</td><td class="DESC">ssl_sock_parse_alpn</td><td class="Q">9487</td><td class="Q">1</td><td><a href="report-a5178f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a5178f.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/proto_sockpair.c</td><td class="DESC">sockpair_connect_server</td><td class="Q">298</td><td class="Q">1</td><td><a href="report-e06e43.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-e06e43.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/mux_h2.c</td><td class="DESC">h2c_bck_handle_headers</td><td class="Q">2593</td><td class="Q">1</td><td><a href="report-9c1a1a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-9c1a1a.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/proto_uxst.c</td><td class="DESC">uxst_connect_server</td><td class="Q">520</td><td class="Q">1</td><td><a href="report-f5ec85.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-f5ec85.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/ssl_sock.c</td><td class="DESC">ssl_bind_parse_npn</td><td class="Q">9426</td><td class="Q">1</td><td><a href="report-ff851a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ff851a.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/payload.c</td><td class="DESC">smp_fetch_req_ssl_ver</td><td class="Q">458</td><td class="Q">1</td><td><a href="report-8e5318.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-8e5318.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/mux_h2.c</td><td class="DESC">h2c_frt_handle_headers</td><td class="Q">2481</td><td class="Q">1</td><td><a href="report-df00bf.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-df00bf.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/h1_htx.c</td><td class="DESC">h1_parse_msg_data</td><td class="Q">466</td><td class="Q">1</td><td><a href="report-0b00b6.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-0b00b6.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>src/ssl_sock.c</td><td class="DESC">ssl_sock_handshake</td><td class="Q">6648</td><td class="Q">1</td><td><a href="report-9d91c8.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-9d91c8.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/task.c</td><td class="DESC">process_runnable_tasks</td><td class="Q">521</td><td class="Q">1</td><td><a href="report-4ccc2f.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-4ccc2f.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>include/common/h1.h</td><td class="DESC">h1_parse_chunk_size</td><td class="Q">299</td><td class="Q">1</td><td><a href="report-e71313.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e71313.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/dns.c</td><td class="DESC">dns_read_name</td><td class="Q">471</td><td class="Q">1</td><td><a href="report-cd47cb.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-cd47cb.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/fcgi.c</td><td class="DESC">fcgi_decode_end_request</td><td class="Q">283</td><td class="Q">1</td><td><a href="report-1e2377.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-1e2377.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/standard.c</td><td class="DESC">human_time</td><td class="Q">2920</td><td class="Q">1</td><td><a href="report-fcd6d3.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-fcd6d3.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/proto_sockpair.c</td><td class="DESC">sockpair_connect_server</td><td class="Q">298</td><td class="Q">1</td><td><a href="report-f59459.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f59459.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/http_ana.c</td><td class="DESC">http_manage_server_side_cookies</td><td class="Q">3808</td><td class="Q">1</td><td><a href="report-bed3e9.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-bed3e9.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/proto_uxst.c</td><td class="DESC">uxst_connect_server</td><td class="Q">520</td><td class="Q">1</td><td><a href="report-ef46cc.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ef46cc.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3527</td><td class="Q">1</td><td><a href="report-16fbe4.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-16fbe4.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/payload.c</td><td class="DESC">smp_fetch_req_ssl_ver</td><td class="Q">458</td><td class="Q">1</td><td><a href="report-8021be.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-8021be.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3526</td><td class="Q">1</td><td><a href="report-9bea90.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-9bea90.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/h1_htx.c</td><td class="DESC">h1_parse_msg_data</td><td class="Q">466</td><td class="Q">1</td><td><a href="report-5fea1f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5fea1f.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3525</td><td class="Q">1</td><td><a href="report-d980c1.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-d980c1.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/task.c</td><td class="DESC">process_runnable_tasks</td><td class="Q">521</td><td class="Q">1</td><td><a href="report-d67a5b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d67a5b.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3523</td><td class="Q">1</td><td><a href="report-a760b1.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-a760b1.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/dns.c</td><td class="DESC">dns_read_name</td><td class="Q">471</td><td class="Q">1</td><td><a href="report-189d4a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-189d4a.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3502</td><td class="Q">1</td><td><a href="report-b52c89.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-b52c89.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/standard.c</td><td class="DESC">human_time</td><td class="Q">2953</td><td class="Q">1</td><td><a href="report-463895.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-463895.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3292</td><td class="Q">1</td><td><a href="report-fd1e17.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-fd1e17.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/checks.c</td><td class="DESC">srv_parse_agent_check</td><td class="Q">6999</td><td class="Q">1</td><td><a href="report-564a0b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-564a0b.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/mux_fcgi.c</td><td class="DESC">fcgi_strm_send_stdin</td><td class="Q">2208</td><td class="Q">1</td><td><a href="report-355ddb.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-355ddb.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/http_ana.c</td><td class="DESC">http_manage_server_side_cookies</td><td class="Q">3808</td><td class="Q">1</td><td><a href="report-37dd0f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-37dd0f.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/cfgparse-listen.c</td><td class="DESC">cfg_parse_listen</td><td class="Q">629</td><td class="Q">1</td><td><a href="report-f6575b.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-f6575b.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3527</td><td class="Q">1</td><td><a href="report-bcdd9d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-bcdd9d.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/cfgparse-listen.c</td><td class="DESC">cfg_parse_listen</td><td class="Q">608</td><td class="Q">1</td><td><a href="report-e699db.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-e699db.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3526</td><td class="Q">1</td><td><a href="report-2d11e1.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2d11e1.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/ssl_sock.c</td><td class="DESC">cli_parse_add_crtlist</td><td class="Q">11419</td><td class="Q">1</td><td><a href="report-cbba55.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-cbba55.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3525</td><td class="Q">1</td><td><a href="report-7ca924.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-7ca924.html" -->
 </tr>
-<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/ssl_sock.c</td><td class="DESC">cli_parse_add_crtlist</td><td class="Q">11412</td><td class="Q">1</td><td><a href="report-8aca9b.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-8aca9b.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3523</td><td class="Q">1</td><td><a href="report-fcedf3.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-fcedf3.html" -->
 </tr>
-<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>src/proto_sockpair.c</td><td class="DESC">recv_fd_uxst</td><td class="Q">354</td><td class="Q">1</td><td><a href="report-452cc2.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-452cc2.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3502</td><td class="Q">1</td><td><a href="report-d4bc44.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d4bc44.html" -->
 </tr>
-<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>src/proto_sockpair.c</td><td class="DESC">send_fd_uxst</td><td class="Q">187</td><td class="Q">1</td><td><a href="report-278ccc.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-278ccc.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/http_ana.c</td><td class="DESC">http_manage_client_side_cookies</td><td class="Q">3292</td><td class="Q">1</td><td><a href="report-bce10a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-bce10a.html" -->
 </tr>
-<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>src/haproxy.c</td><td class="DESC">init</td><td class="Q">2149</td><td class="Q">1</td><td><a href="report-841309.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-841309.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/mux_fcgi.c</td><td class="DESC">fcgi_strm_send_stdin</td><td class="Q">2209</td><td class="Q">1</td><td><a href="report-de0dea.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-de0dea.html" -->
 </tr>
-<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>src/cfgparse.c</td><td class="DESC">check_config_validity</td><td class="Q">4082</td><td class="Q">1</td><td><a href="report-3c0197.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-3c0197.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/cfgparse-listen.c</td><td class="DESC">cfg_parse_listen</td><td class="Q">617</td><td class="Q">1</td><td><a href="report-5418f3.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5418f3.html" -->
 </tr>
-<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>src/cfgparse.c</td><td class="DESC">check_config_validity</td><td class="Q">2929</td><td class="Q">1</td><td><a href="report-79c7f9.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-79c7f9.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/cfgparse-listen.c</td><td class="DESC">cfg_parse_listen</td><td class="Q">596</td><td class="Q">1</td><td><a href="report-9f2ae8.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-9f2ae8.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/shctx.c</td><td class="DESC">shctx_row_reserve_hot</td><td class="Q">128</td><td class="Q">14</td><td><a href="report-38f2d3.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-38f2d3.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/ssl_sock.c</td><td class="DESC">cli_parse_add_crtlist</td><td class="Q">11485</td><td class="Q">1</td><td><a href="report-80805a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-80805a.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/buffer.c</td><td class="DESC">__offer_buffer</td><td class="Q">123</td><td class="Q">27</td><td><a href="report-d93687.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-d93687.html" -->
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>src/ssl_sock.c</td><td class="DESC">cli_parse_add_crtlist</td><td class="Q">11460</td><td class="Q">1</td><td><a href="report-7fd019.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-7fd019.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mworker-prog.c</td><td class="DESC">cfg_parse_program</td><td class="Q">279</td><td class="Q">15</td><td><a href="report-1089a6.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-1089a6.html" -->
+<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>src/proto_sockpair.c</td><td class="DESC">recv_fd_uxst</td><td class="Q">354</td><td class="Q">1</td><td><a href="report-1f76ba.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-1f76ba.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mworker-prog.c</td><td class="DESC">cfg_parse_program</td><td class="Q">254</td><td class="Q">13</td><td><a href="report-b0ee02.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-b0ee02.html" -->
+<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>src/proto_sockpair.c</td><td class="DESC">send_fd_uxst</td><td class="Q">187</td><td class="Q">1</td><td><a href="report-b5ee2f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b5ee2f.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mworker-prog.c</td><td class="DESC">cfg_parse_program</td><td class="Q">234</td><td class="Q">16</td><td><a href="report-04b67d.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-04b67d.html" -->
+<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>src/checks.c</td><td class="DESC">wake_srv_chk</td><td class="Q">3109</td><td class="Q">1</td><td><a href="report-274659.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-274659.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mworker-prog.c</td><td class="DESC">cfg_parse_program</td><td class="Q">232</td><td class="Q">14</td><td><a href="report-a913d3.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-a913d3.html" -->
+<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>src/checks.c</td><td class="DESC">tcpcheck_spop_expect_agenthello</td><td class="Q">1367</td><td class="Q">1</td><td><a href="report-5a2fc8.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5a2fc8.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mworker-prog.c</td><td class="DESC">cfg_parse_program</td><td class="Q">200</td><td class="Q">9</td><td><a href="report-2c3235.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-2c3235.html" -->
+<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>src/checks.c</td><td class="DESC">tcpcheck_ldap_expect_bindrsp</td><td class="Q">1301</td><td class="Q">1</td><td><a href="report-a2d085.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a2d085.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/h2.c</td><td class="DESC">h2_make_htx_response</td><td class="Q">686</td><td class="Q">20</td><td><a href="report-2f0083.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-2f0083.html" -->
+<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>src/haproxy.c</td><td class="DESC">init</td><td class="Q">2156</td><td class="Q">1</td><td><a href="report-2b717c.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2b717c.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/h2.c</td><td class="DESC">h2_make_htx_request</td><td class="Q">449</td><td class="Q">20</td><td><a href="report-92177f.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-92177f.html" -->
+<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>src/cfgparse.c</td><td class="DESC">check_config_validity</td><td class="Q">4047</td><td class="Q">1</td><td><a href="report-e62df7.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e62df7.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/http_act.c</td><td class="DESC">parse_http_return</td><td class="Q">2439</td><td class="Q">14</td><td><a href="report-2636f3.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-2636f3.html" -->
+<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>src/cfgparse.c</td><td class="DESC">check_config_validity</td><td class="Q">2906</td><td class="Q">1</td><td><a href="report-3fcad8.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-3fcad8.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/http_htx.c</td><td class="DESC">cfg_parse_http_errors</td><td class="Q">1464</td><td class="Q">10</td><td><a href="report-409a97.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-409a97.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/shctx.c</td><td class="DESC">shctx_row_reserve_hot</td><td class="Q">128</td><td class="Q">14</td><td><a href="report-f84dbb.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f84dbb.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/h1_htx.c</td><td class="DESC">h1_parse_msg_hdrs</td><td class="Q">367</td><td class="Q">14</td><td><a href="report-b55cb6.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-b55cb6.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/buffer.c</td><td class="DESC">__offer_buffer</td><td class="Q">123</td><td class="Q">27</td><td><a href="report-e2496a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e2496a.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/h1_htx.c</td><td class="DESC">h1_postparse_req_hdrs</td><td class="Q">166</td><td class="Q">16</td><td><a href="report-fc06a3.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-fc06a3.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mworker-prog.c</td><td class="DESC">cfg_parse_program</td><td class="Q">279</td><td class="Q">15</td><td><a href="report-f58cfd.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f58cfd.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/h1_htx.c</td><td class="DESC">h1_process_req_vsn</td><td class="Q">75</td><td class="Q">16</td><td><a href="report-4961b3.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-4961b3.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mworker-prog.c</td><td class="DESC">cfg_parse_program</td><td class="Q">254</td><td class="Q">13</td><td><a href="report-106275.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-106275.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/h1_htx.c</td><td class="DESC">h1_process_req_vsn</td><td class="Q">66</td><td class="Q">16</td><td><a href="report-ae9178.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-ae9178.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mworker-prog.c</td><td class="DESC">cfg_parse_program</td><td class="Q">234</td><td class="Q">16</td><td><a href="report-a85313.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a85313.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>include/proto/connection.h</td><td class="DESC">conn_is_back</td><td class="Q">903</td><td class="Q">13</td><td><a href="report-4dbf33.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-4dbf33.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mworker-prog.c</td><td class="DESC">cfg_parse_program</td><td class="Q">232</td><td class="Q">14</td><td><a href="report-bb7837.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-bb7837.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">1031</td><td class="Q">32</td><td><a href="report-3ecf76.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-3ecf76.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mworker-prog.c</td><td class="DESC">cfg_parse_program</td><td class="Q">200</td><td class="Q">9</td><td><a href="report-2b0023.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2b0023.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">1013</td><td class="Q">30</td><td><a href="report-625a14.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-625a14.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/h2.c</td><td class="DESC">h2_make_htx_response</td><td class="Q">686</td><td class="Q">20</td><td><a href="report-fc1b16.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-fc1b16.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">1011</td><td class="Q">28</td><td><a href="report-859418.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-859418.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/h2.c</td><td class="DESC">h2_make_htx_request</td><td class="Q">449</td><td class="Q">20</td><td><a href="report-71461a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-71461a.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">1005</td><td class="Q">28</td><td><a href="report-ef5832.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-ef5832.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/http_act.c</td><td class="DESC">parse_http_return</td><td class="Q">2439</td><td class="Q">14</td><td><a href="report-cc9d54.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-cc9d54.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">1003</td><td class="Q">26</td><td><a href="report-d00445.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-d00445.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/http_htx.c</td><td class="DESC">cfg_parse_http_errors</td><td class="Q">1464</td><td class="Q">10</td><td><a href="report-980c68.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-980c68.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">997</td><td class="Q">26</td><td><a href="report-d8c9a2.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-d8c9a2.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/h1_htx.c</td><td class="DESC">h1_parse_msg_hdrs</td><td class="Q">367</td><td class="Q">14</td><td><a href="report-6c20ae.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6c20ae.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">995</td><td class="Q">24</td><td><a href="report-1d4ee9.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-1d4ee9.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/h1_htx.c</td><td class="DESC">h1_postparse_req_hdrs</td><td class="Q">166</td><td class="Q">16</td><td><a href="report-f9a47d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f9a47d.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">857</td><td class="Q">11</td><td><a href="report-26ccf2.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-26ccf2.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/h1_htx.c</td><td class="DESC">h1_process_req_vsn</td><td class="Q">75</td><td class="Q">16</td><td><a href="report-50bdf7.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-50bdf7.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">fcgi_app_add_rule</td><td class="Q">732</td><td class="Q">41</td><td><a href="report-b093d0.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-b093d0.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/h1_htx.c</td><td class="DESC">h1_process_req_vsn</td><td class="Q">66</td><td class="Q">16</td><td><a href="report-770907.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-770907.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>include/common/ist.h</td><td class="DESC">istfree</td><td class="Q">756</td><td class="Q">11</td><td><a href="report-6d745a.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-6d745a.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>include/proto/connection.h</td><td class="DESC">conn_is_back</td><td class="Q">906</td><td class="Q">13</td><td><a href="report-323ded.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-323ded.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/http_fetch.c</td><td class="DESC">smp_fetch_cookie_cnt</td><td class="Q">1603</td><td class="Q">10</td><td><a href="report-5e1eda.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-5e1eda.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">1031</td><td class="Q">32</td><td><a href="report-17231f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-17231f.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/http_fetch.c</td><td class="DESC">smp_fetch_cookie</td><td class="Q">1513</td><td class="Q">13</td><td><a href="report-d62d76.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-d62d76.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">1013</td><td class="Q">30</td><td><a href="report-ff0a3d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ff0a3d.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>include/common/http-hdr.h</td><td class="DESC">http_del_hdr</td><td class="Q">58</td><td class="Q">26</td><td><a href="report-00719d.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-00719d.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">1011</td><td class="Q">28</td><td><a href="report-0fa4f8.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0fa4f8.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/listener.c</td><td class="DESC">listener_release</td><td class="Q">1130</td><td class="Q">7</td><td><a href="report-5ea65b.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-5ea65b.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">1005</td><td class="Q">28</td><td><a href="report-0879c8.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0879c8.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/listener.c</td><td class="DESC">listener_accept</td><td class="Q">882</td><td class="Q">37</td><td><a href="report-04b6b7.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-04b6b7.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">1003</td><td class="Q">26</td><td><a href="report-64c580.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-64c580.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>include/proto/proxy.h</td><td class="DESC">proxy_inc_fe_conn_ctr</td><td class="Q">119</td><td class="Q">32</td><td><a href="report-1171fb.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-1171fb.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">997</td><td class="Q">26</td><td><a href="report-452ad6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-452ad6.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>include/proto/listener.h</td><td class="DESC">listener_state_str</td><td class="Q">177</td><td class="Q">41</td><td><a href="report-0ce120.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-0ce120.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">995</td><td class="Q">24</td><td><a href="report-08b4d7.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-08b4d7.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/checks.c</td><td class="DESC">tcpcheck_main</td><td class="Q">3248</td><td class="Q">16</td><td><a href="report-858836.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-858836.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">cfg_parse_fcgi_app</td><td class="Q">857</td><td class="Q">11</td><td><a href="report-324fdb.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-324fdb.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/checks.c</td><td class="DESC">tcpcheck_main</td><td class="Q">2923</td><td class="Q">35</td><td><a href="report-8ab3f0.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-8ab3f0.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/fcgi-app.c</td><td class="DESC">fcgi_app_add_rule</td><td class="Q">732</td><td class="Q">41</td><td><a href="report-079406.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-079406.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/checks.c</td><td class="DESC">tcpcheck_main</td><td class="Q">2914</td><td class="Q">32</td><td><a href="report-dbb7c0.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-dbb7c0.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>include/common/ist.h</td><td class="DESC">istfree</td><td class="Q">762</td><td class="Q">11</td><td><a href="report-76f34b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-76f34b.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/checks.c</td><td class="DESC">__event_srv_chk_w</td><td class="Q">792</td><td class="Q">25</td><td><a href="report-e27196.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-e27196.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/http_fetch.c</td><td class="DESC">smp_fetch_cookie_cnt</td><td class="Q">1635</td><td class="Q">10</td><td><a href="report-9618bb.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-9618bb.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/checks.c</td><td class="DESC">check_notify_failure</td><td class="Q">334</td><td class="Q">50</td><td><a href="report-e4bf1b.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-e4bf1b.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/http_fetch.c</td><td class="DESC">smp_fetch_cookie</td><td class="Q">1545</td><td class="Q">13</td><td><a href="report-fa9332.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-fa9332.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/log.c</td><td class="DESC">__do_send_log</td><td class="Q">1758</td><td class="Q">31</td><td><a href="report-549e5b.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-549e5b.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>include/common/http-hdr.h</td><td class="DESC">http_del_hdr</td><td class="Q">58</td><td class="Q">26</td><td><a href="report-3d5f0e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-3d5f0e.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/backend.c</td><td class="DESC">get_server_ph_post</td><td class="Q">352</td><td class="Q">38</td><td><a href="report-59ec03.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-59ec03.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/listener.c</td><td class="DESC">listener_release</td><td class="Q">1130</td><td class="Q">7</td><td><a href="report-ebe117.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ebe117.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_mailers</td><td class="Q">1524</td><td class="Q">18</td><td><a href="report-9efc35.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-9efc35.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/listener.c</td><td class="DESC">listener_accept</td><td class="Q">882</td><td class="Q">37</td><td><a href="report-47a67a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-47a67a.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_mailers</td><td class="Q">1446</td><td class="Q">11</td><td><a href="report-11daee.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-11daee.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>include/proto/proxy.h</td><td class="DESC">proxy_inc_fe_conn_ctr</td><td class="Q">119</td><td class="Q">32</td><td><a href="report-343317.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-343317.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1339</td><td class="Q">29</td><td><a href="report-7bf6dc.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-7bf6dc.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/checks.c</td><td class="DESC">tcpcheck_eval_connect</td><td class="Q">1714</td><td class="Q">28</td><td><a href="report-484d8c.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-484d8c.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1337</td><td class="Q">29</td><td><a href="report-a401ee.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-a401ee.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/checks.c</td><td class="DESC">tcpcheck_eval_connect</td><td class="Q">1691</td><td class="Q">13</td><td><a href="report-033e5e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-033e5e.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1297</td><td class="Q">17</td><td><a href="report-28210b.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-28210b.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/checks.c</td><td class="DESC">check_notify_failure</td><td class="Q">345</td><td class="Q">67</td><td><a href="report-d862b9.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d862b9.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1282</td><td class="Q">16</td><td><a href="report-01355e.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-01355e.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>include/proto/listener.h</td><td class="DESC">listener_state_str</td><td class="Q">177</td><td class="Q">41</td><td><a href="report-8422fc.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-8422fc.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1255</td><td class="Q">28</td><td><a href="report-418d1f.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-418d1f.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/log.c</td><td class="DESC">__do_send_log</td><td class="Q">1760</td><td class="Q">31</td><td><a href="report-ed8b2b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ed8b2b.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1253</td><td class="Q">26</td><td><a href="report-c1f2cb.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-c1f2cb.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/backend.c</td><td class="DESC">get_server_ph_post</td><td class="Q">352</td><td class="Q">38</td><td><a href="report-ee7ef0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ee7ef0.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1251</td><td class="Q">24</td><td><a href="report-456ae6.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-456ae6.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_mailers</td><td class="Q">1494</td><td class="Q">18</td><td><a href="report-11f8cd.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-11f8cd.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1249</td><td class="Q">22</td><td><a href="report-33f899.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-33f899.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_mailers</td><td class="Q">1416</td><td class="Q">11</td><td><a href="report-e06cf6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e06cf6.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1247</td><td class="Q">20</td><td><a href="report-0354bd.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-0354bd.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1309</td><td class="Q">29</td><td><a href="report-b07dbb.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b07dbb.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1245</td><td class="Q">18</td><td><a href="report-5d8f73.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-5d8f73.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1307</td><td class="Q">29</td><td><a href="report-c354f1.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c354f1.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1150</td><td class="Q">20</td><td><a href="report-395bb2.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-395bb2.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1267</td><td class="Q">17</td><td><a href="report-2156b3.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2156b3.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1048</td><td class="Q">9</td><td><a href="report-bd69f2.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-bd69f2.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1252</td><td class="Q">16</td><td><a href="report-197bec.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-197bec.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_peers</td><td class="Q">942</td><td class="Q">19</td><td><a href="report-8256ac.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-8256ac.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1225</td><td class="Q">28</td><td><a href="report-4bdf05.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4bdf05.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_peers</td><td class="Q">939</td><td class="Q">17</td><td><a href="report-c2488e.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-c2488e.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1223</td><td class="Q">26</td><td><a href="report-152b41.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-152b41.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_peers</td><td class="Q">800</td><td class="Q">18</td><td><a href="report-26a9a0.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-26a9a0.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1221</td><td class="Q">24</td><td><a href="report-818bc7.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-818bc7.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_peers_add_peer</td><td class="Q">573</td><td class="Q">20</td><td><a href="report-a382d9.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-a382d9.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1219</td><td class="Q">22</td><td><a href="report-3949e5.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-3949e5.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">init_peers_frontend</td><td class="Q">501</td><td class="Q">4</td><td><a href="report-2ad2ca.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-2ad2ca.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1217</td><td class="Q">20</td><td><a href="report-919457.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-919457.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mux_fcgi.c</td><td class="DESC">fcgi_process_demux</td><td class="Q">2532</td><td class="Q">24</td><td><a href="report-b2063b.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-b2063b.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1215</td><td class="Q">18</td><td><a href="report-7cb582.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-7cb582.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/ssl_sock.c</td><td class="DESC">cli_io_handler_commit_cert</td><td class="Q">12005</td><td class="Q">53</td><td><a href="report-1c122a.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-1c122a.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1120</td><td class="Q">20</td><td><a href="report-9baee9.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-9baee9.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/ssl_sock.c</td><td class="DESC">ssl_sock_load_cert_list_file</td><td class="Q">5004</td><td class="Q">36</td><td><a href="report-09f94c.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-09f94c.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_resolvers</td><td class="Q">1018</td><td class="Q">9</td><td><a href="report-323bf5.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-323bf5.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/ssl_sock.c</td><td class="DESC">crtlist_free</td><td class="Q">3058</td><td class="Q">36</td><td><a href="report-288137.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-288137.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_peers</td><td class="Q">912</td><td class="Q">19</td><td><a href="report-4d651f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4d651f.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mux_h2.c</td><td class="DESC">h2c_frt_handle_data</td><td class="Q">2673</td><td class="Q">48</td><td><a href="report-f30efa.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-f30efa.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_peers</td><td class="Q">909</td><td class="Q">17</td><td><a href="report-97b3df.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-97b3df.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mux_h2.c</td><td class="DESC">h2c_handle_rst_stream</td><td class="Q">2416</td><td class="Q">43</td><td><a href="report-e48231.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-e48231.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_parse_peers</td><td class="Q">770</td><td class="Q">18</td><td><a href="report-e2eb74.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e2eb74.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_undefined_pointer_value"><td class="DESC">Logic error</td><td class="DESC">Dereference of undefined pointer value</td><td>src/mux_h2.c</td><td class="DESC">h2s_bck_make_req_headers</td><td class="Q">5095</td><td class="Q">72</td><td><a href="report-cd0889.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-cd0889.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">cfg_peers_add_peer</td><td class="Q">543</td><td class="Q">20</td><td><a href="report-c553e8.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c553e8.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_undefined_pointer_value"><td class="DESC">Logic error</td><td class="DESC">Dereference of undefined pointer value</td><td>src/mux_h2.c</td><td class="DESC">h2s_frt_make_resp_headers</td><td class="Q">4737</td><td class="Q">54</td><td><a href="report-b8dbd0.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-b8dbd0.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/cfgparse.c</td><td class="DESC">init_peers_frontend</td><td class="Q">471</td><td class="Q">4</td><td><a href="report-148c2e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-148c2e.html" -->
 </tr>
-<tr class="bt_logic_error_division_by_zero"><td class="DESC">Logic error</td><td class="DESC">Division by zero</td><td>src/cli.c</td><td class="DESC">cli_io_handler_show_activity</td><td class="Q">1156</td><td class="Q">122</td><td><a href="report-c117dd.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-c117dd.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/http_ana.c</td><td class="DESC">http_wait_for_response</td><td class="Q">1531</td><td class="Q">16</td><td><a href="report-d725a9.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d725a9.html" -->
 </tr>
-<tr class="bt_memory_error_memory_leak"><td class="DESC">Memory error</td><td class="DESC">Memory leak</td><td>src/http_act.c</td><td class="DESC">parse_http_return</td><td class="Q">2420</td><td class="Q">36</td><td><a href="report-25f637.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-25f637.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mux_fcgi.c</td><td class="DESC">fcgi_process_demux</td><td class="Q">2533</td><td class="Q">24</td><td><a href="report-62c344.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-62c344.html" -->
 </tr>
-<tr class="bt_memory_error_memory_leak"><td class="DESC">Memory error</td><td class="DESC">Memory leak</td><td>src/http_act.c</td><td class="DESC">parse_http_return</td><td class="Q">2238</td><td class="Q">34</td><td><a href="report-62c494.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-62c494.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/ssl_sock.c</td><td class="DESC">cli_io_handler_commit_cert</td><td class="Q">12077</td><td class="Q">53</td><td><a href="report-cfbaa6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-cfbaa6.html" -->
 </tr>
-<tr class="bt_memory_error_memory_leak"><td class="DESC">Memory error</td><td class="DESC">Memory leak</td><td>src/proxy.c</td><td class="DESC">proxy_parse_declare</td><td class="Q">506</td><td class="Q">26</td><td><a href="report-ee569e.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-ee569e.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/ssl_sock.c</td><td class="DESC">cli_io_handler_add_crtlist</td><td class="Q">11343</td><td class="Q">32</td><td><a href="report-0be960.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0be960.html" -->
 </tr>
-<tr class="bt_memory_error_memory_leak"><td class="DESC">Memory error</td><td class="DESC">Memory leak</td><td>src/standard.c</td><td class="DESC">parse_dotted_uints</td><td class="Q">4518</td><td class="Q">16</td><td><a href="report-e2b0cb.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-e2b0cb.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mux_h2.c</td><td class="DESC">h2c_frt_handle_data</td><td class="Q">2673</td><td class="Q">48</td><td><a href="report-d9e82e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d9e82e.html" -->
 </tr>
-<tr class="bt_memory_error_memory_leak"><td class="DESC">Memory error</td><td class="DESC">Memory leak</td><td>src/standard.c</td><td class="DESC">memvprintf</td><td class="Q">3632</td><td class="Q">25</td><td><a href="report-9954ea.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-9954ea.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/mux_h2.c</td><td class="DESC">h2c_handle_rst_stream</td><td class="Q">2416</td><td class="Q">43</td><td><a href="report-1dba32.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-1dba32.html" -->
 </tr>
-<tr class="bt_memory_error_memory_leak"><td class="DESC">Memory error</td><td class="DESC">Memory leak</td><td>src/log.c</td><td class="DESC">parse_logsrv</td><td class="Q">966</td><td class="Q">34</td><td><a href="report-287d8f.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-287d8f.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/ssl_sock.c</td><td class="DESC">ssl_sock_load_cert_list_file</td><td class="Q">5008</td><td class="Q">36</td><td><a href="report-179a2e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-179a2e.html" -->
 </tr>
-<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>src/hpack-huff.c</td><td class="DESC">huff_dec</td><td class="Q">1527</td><td class="Q">26</td><td><a href="report-cbad0a.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-cbad0a.html" -->
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/ssl_sock.c</td><td class="DESC">crtlist_free</td><td class="Q">3062</td><td class="Q">36</td><td><a href="report-be3685.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-be3685.html" -->
 </tr>
-<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>src/acl.c</td><td class="DESC">parse_acl_expr</td><td class="Q">604</td><td class="Q">43</td><td><a href="report-97cc48.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-97cc48.html" -->
+<tr class="bt_logic_error_dereference_of_undefined_pointer_value"><td class="DESC">Logic error</td><td class="DESC">Dereference of undefined pointer value</td><td>src/mux_h2.c</td><td class="DESC">h2s_bck_make_req_headers</td><td class="Q">5095</td><td class="Q">72</td><td><a href="report-5c65c1.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5c65c1.html" -->
 </tr>
-<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>src/ssl_sock.c</td><td class="DESC">cli_io_handler_commit_cert</td><td class="Q">12005</td><td class="Q">62</td><td><a href="report-c329f8.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-c329f8.html" -->
+<tr class="bt_logic_error_dereference_of_undefined_pointer_value"><td class="DESC">Logic error</td><td class="DESC">Dereference of undefined pointer value</td><td>src/mux_h2.c</td><td class="DESC">h2s_frt_make_resp_headers</td><td class="Q">4737</td><td class="Q">54</td><td><a href="report-205336.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-205336.html" -->
 </tr>
-<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>src/debug.c</td><td class="DESC">ha_thread_dump</td><td class="Q">122</td><td class="Q">34</td><td><a href="report-8548cd.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-8548cd.html" -->
+<tr class="bt_logic_error_division_by_zero"><td class="DESC">Logic error</td><td class="DESC">Division by zero</td><td>src/cli.c</td><td class="DESC">cli_io_handler_show_activity</td><td class="Q">1156</td><td class="Q">122</td><td><a href="report-206184.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-206184.html" -->
 </tr>
-<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>src/http_fetch.c</td><td class="DESC">smp_fetch_hdr</td><td class="Q">874</td><td class="Q">20</td><td><a href="report-5e4aee.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-5e4aee.html" -->
+<tr class="bt_memory_error_memory_leak"><td class="DESC">Memory error</td><td class="DESC">Memory leak</td><td>src/http_act.c</td><td class="DESC">parse_http_return</td><td class="Q">2420</td><td class="Q">36</td><td><a href="report-89db54.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-89db54.html" -->
 </tr>
-<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>src/http_fetch.c</td><td class="DESC">smp_fetch_fhdr</td><td class="Q">746</td><td class="Q">20</td><td><a href="report-e57623.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-e57623.html" -->
+<tr class="bt_memory_error_memory_leak"><td class="DESC">Memory error</td><td class="DESC">Memory leak</td><td>src/http_act.c</td><td class="DESC">parse_http_return</td><td class="Q">2238</td><td class="Q">34</td><td><a href="report-ec6172.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ec6172.html" -->
 </tr>
-<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>src/mux_h2.c</td><td class="DESC">h2s_bck_make_req_headers</td><td class="Q">5101</td><td class="Q">72</td><td><a href="report-6b965d.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-6b965d.html" -->
+<tr class="bt_memory_error_memory_leak"><td class="DESC">Memory error</td><td class="DESC">Memory leak</td><td>src/proxy.c</td><td class="DESC">proxy_parse_declare</td><td class="Q">506</td><td class="Q">26</td><td><a href="report-7fc4ab.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-7fc4ab.html" -->
 </tr>
-<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>src/mux_h2.c</td><td class="DESC">h2s_frt_make_resp_headers</td><td class="Q">4743</td><td class="Q">53</td><td><a href="report-2c4be7.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-2c4be7.html" -->
+<tr class="bt_memory_error_memory_leak"><td class="DESC">Memory error</td><td class="DESC">Memory leak</td><td>src/standard.c</td><td class="DESC">parse_dotted_uints</td><td class="Q">4551</td><td class="Q">16</td><td><a href="report-2c2b29.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2c2b29.html" -->
 </tr>
-<tr class="bt_memory_error_use-after-free"><td class="DESC">Memory error</td><td class="DESC">Use-after-free</td><td>src/mworker.c</td><td class="DESC">mworker_catch_sigchld</td><td class="Q">277</td><td class="Q">37</td><td><a href="report-991e3c.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-991e3c.html" -->
+<tr class="bt_memory_error_memory_leak"><td class="DESC">Memory error</td><td class="DESC">Memory leak</td><td>src/standard.c</td><td class="DESC">memvprintf</td><td class="Q">3665</td><td class="Q">25</td><td><a href="report-8c188e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-8c188e.html" -->
 </tr>
-<tr class="bt_memory_error_use-after-free"><td class="DESC">Memory error</td><td class="DESC">Use-after-free</td><td>src/haproxy.c</td><td class="DESC">init</td><td class="Q">1940</td><td class="Q">36</td><td><a href="report-73f149.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-73f149.html" -->
+<tr class="bt_memory_error_memory_leak"><td class="DESC">Memory error</td><td class="DESC">Memory leak</td><td>src/log.c</td><td class="DESC">parse_logsrv</td><td class="Q">968</td><td class="Q">34</td><td><a href="report-61ec03.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-61ec03.html" -->
+</tr>
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>src/hpack-huff.c</td><td class="DESC">huff_dec</td><td class="Q">1527</td><td class="Q">26</td><td><a href="report-821e02.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-821e02.html" -->
+</tr>
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>src/acl.c</td><td class="DESC">parse_acl_expr</td><td class="Q">604</td><td class="Q">43</td><td><a href="report-78e1ab.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-78e1ab.html" -->
+</tr>
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>src/ssl_sock.c</td><td class="DESC">cli_io_handler_commit_cert</td><td class="Q">12077</td><td class="Q">62</td><td><a href="report-b0fc77.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b0fc77.html" -->
+</tr>
+<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>src/debug.c</td><td class="DESC">ha_thread_dump</td><td class="Q">122</td><td class="Q">34</td><td><a href="report-ecbc28.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ecbc28.html" -->
+</tr>
+<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>src/http_fetch.c</td><td class="DESC">smp_fetch_hdr</td><td class="Q">879</td><td class="Q">20</td><td><a href="report-5ae52b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5ae52b.html" -->
+</tr>
+<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>src/http_fetch.c</td><td class="DESC">smp_fetch_fhdr</td><td class="Q">751</td><td class="Q">20</td><td><a href="report-c710cc.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c710cc.html" -->
+</tr>
+<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>src/mux_h2.c</td><td class="DESC">h2s_bck_make_req_headers</td><td class="Q">5101</td><td class="Q">72</td><td><a href="report-45e5ff.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-45e5ff.html" -->
+</tr>
+<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>src/mux_h2.c</td><td class="DESC">h2s_frt_make_resp_headers</td><td class="Q">4743</td><td class="Q">53</td><td><a href="report-7432f7.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-7432f7.html" -->
+</tr>
+<tr class="bt_memory_error_use-after-free"><td class="DESC">Memory error</td><td class="DESC">Use-after-free</td><td>src/mworker.c</td><td class="DESC">mworker_catch_sigchld</td><td class="Q">277</td><td class="Q">37</td><td><a href="report-95ba1d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-95ba1d.html" -->
+</tr>
+<tr class="bt_memory_error_use-after-free"><td class="DESC">Memory error</td><td class="DESC">Use-after-free</td><td>src/haproxy.c</td><td class="DESC">init</td><td class="Q">1947</td><td class="Q">36</td><td><a href="report-fdf7a3.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-fdf7a3.html" -->
 </tr>
 </tbody>
 </table>
