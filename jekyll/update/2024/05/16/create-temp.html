@@ -88,9 +88,9 @@
 
 <h2 id="как-можно-найти-такие-запросы">Как можно найти такие запросы</h2>
 
-<p>Например, при помощи <a href="https://www.postgresql.org/docs/current/pgstatstatements.html">pg_stat_statements</a>:</p>
+<p>Например, при помощи <a href="https://postgrespro.ru/docs/postgresql/16/pgstatstatements">pg_stat_statements</a>:</p>
 
-<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">calls</span><span class="p">,</span> <span class="n">round</span><span class="p">(</span><span class="n">total_time</span><span class="o">/</span><span class="n">calls</span><span class="p">)</span> <span class="nv">"average"</span><span class="p">,</span> <span class="n">round</span><span class="p">(</span><span class="n">total_time</span><span class="p">),</span> <span class="n">query</span> 
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">calls</span><span class="p">,</span> <span class="n">round</span><span class="p">(</span><span class="n">total_time</span><span class="o">/</span><span class="n">calls</span><span class="p">)</span> <span class="nv">"average"</span><span class="p">,</span> <span class="n">round</span><span class="p">(</span><span class="n">total_exec_time</span><span class="p">),</span> <span class="n">query</span> 
 <span class="k">FROM</span> <span class="n">pg_stat_statements</span> 
 <span class="k">WHERE</span> <span class="k">lower</span><span class="p">(</span><span class="n">query</span><span class="p">)</span> <span class="k">like</span> <span class="s1">'%create temp%'</span>
 <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">total_time</span> <span class="k">desc</span></code></pre></figure>
